@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Fontdiner Swanky";
+  src: url("../font/FontdinerSwanky-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px rgb(255, 0, 0) solid !important; */
+}
+
+body {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logotype {
+  font-family: "Fontdiner Swanky";
+  font-size: 3rem;
+  white-space: nowrap;
+  padding-left: 15px;
+}
+
+.nav-header {
+  background-color: rgb(23, 23, 23);
+  padding: 45px;
+}
+
+.width-div {
+  width: 1440pxs;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.7rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.nav-link {
+  font-weight: 700;
+  padding: 15px;
+}
+
+.nav-link:hover,
+.contact-button:hover {
+  background-color: white;
+  color: rgb(23, 23, 23);
+}
+
+.nav-link:active {
+  color: rgb(109, 0, 47);
+}
+.contact-button {
+  background-color: inherit;
+  color: inherit;
+  border: 2px white solid;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.nav-link,
+.contact-button {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .nav-links {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
